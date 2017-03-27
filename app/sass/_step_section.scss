@@ -1,0 +1,203 @@
+.steps_section {
+    background-color: #fff;
+    margin-top: 34px;
+
+    &__headline {
+        @include font(22px, 700, #000);
+        letter-spacing: 0.3px;
+        text-align: center;
+    }
+
+    .step1 {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .step2 {
+        margin-top: 9px;
+
+        .steps_section__step {
+            &__stepNumber {
+                top: 100px;
+            }
+
+            &__title {
+                padding-top: 134px;
+                letter-spacing: 0.5px;
+            }
+
+            &__content {
+                letter-spacing: 0.17px;
+                line-height: 16px;
+                bottom: 18px;
+            }
+        }
+    }
+
+    .step3 {
+        margin-top: 10px;
+    }
+}
+
+.slider_element {
+    width: 300px;
+    height: 240px;
+    position: relative;
+}
+
+.steps_section__step {
+    height: 240px;
+    width: 300px;
+    margin: 15px auto 0;
+    position: relative;
+
+    &__stepNumber {
+        width: 70px;
+        text-decoration: none;
+        height: 20px;
+        line-height: 20px;
+        background-color: #ff4e50;
+        border-radius: 10px;
+        @include font(10px, 400, #fff);
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 69px;
+        left: 20px;
+        letter-spacing: 2.2px;
+        padding-left: 1px;
+
+        &:hover {
+            box-shadow: 0 0 5px 0 #fff;
+        }
+    }
+
+    &__title {
+        @include font(24px, 700, #fff);
+        padding: 104px 0 12px 18px;
+        letter-spacing: 0.3px;
+        position: absolute;
+        z-index: 999;
+        bottom: 67px;
+    }
+
+    &__content {
+        @include font(14px, 300, #ccc);
+        font-family: $roboto;
+        padding-left: 18px;
+        line-height: 17px;
+        width: 275px;
+        letter-spacing: 0.1px;
+        z-index: 999;
+        position: absolute;
+        bottom: 15px;
+    }
+}
+@media (min-width: 768px) {
+    .bx-wrapper {
+        display: block;
+    }
+
+    .steps_section {
+        max-width: 768px;
+        margin: 0 auto;
+
+        &__headline {
+            padding: 95px 0 0 4px;
+            text-align: center;
+        }
+
+        &__wrapper {
+            display: flex;
+            margin-top: 24px;
+        }
+
+        .step1 {
+            margin-top: 9px;
+        }
+
+        .step2 {
+            .steps_section__step__stepNumber {
+                top: 260px;
+            }
+
+            .steps_section__step__title {
+                padding-top: 295px;
+            }
+
+            .steps_section__step__content {
+                margin-top: -1px;
+            }
+
+            .bx-next {
+                right: 10px;
+            }
+
+            .bx-prev {
+                left: 9px;
+            }
+        }
+    }
+
+    .steps_section__step {
+        width: 236px;
+        height: 400px;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+        border-radius: 4px;
+
+        &__stepNumber {
+            top: 213px;
+            left: 21px;
+        }
+
+        &__title {
+            padding: 247px 0 12px 18px;
+            letter-spacing: 0.2px;
+            position: absolute;
+            top: -1px;
+        }
+
+        &__content {
+            width: 210px;
+            letter-spacing: 0;
+            position: absolute;
+            bottom: 18px;
+        }
+    }
+}
+@media (min-width: 1440px) {
+    .steps_section {
+        margin-top: 40px;
+
+        &__step {
+            width: 300px;
+
+            &__stepNumber {
+                top: 230px;
+            }
+
+            &__title {
+                padding-top: 264px;
+                list-style: 0.6px;
+            }
+
+            &__content {
+                width: 262px;
+                letter-spacing: 0.1px;
+                bottom: 16px;
+            }
+        }
+
+        &__wrapper {
+            width: 960px;
+            margin: 0 auto 0 -97px;
+        }
+
+        &__headline {
+            padding: 54px 7px 25px 3px;
+        }
+    }
+}

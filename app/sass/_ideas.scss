@@ -1,0 +1,169 @@
+.holiday_ideas {
+    &__title {
+        @include font(22px, 700, #333);
+        text-align: center;
+        margin: 33px 0 2px;
+        letter-spacing: 0.6px;
+    }
+}
+
+.form__search {
+    padding-bottom: 40px;
+
+    &__wrapper {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        @include font(18px, 300, #333);
+        font-family: $roboto;
+        text-align: center;
+        margin: -3px 3px 16px 0;
+    }
+
+    &__input {
+        width: 263px;
+        height: 38px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 1px 0 #eee;
+        @include font(14px, 300, #999);
+        font-family: $roboto;
+        margin: 0 0 10px 18px;
+        padding-left: 15px;
+    }
+
+    &__btn {
+        width: 280px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #ff4e50;
+        border-radius: 20px;
+        border: 0;
+        margin-left: 18px;
+        @include font(14px, 700, #fff);
+
+        &:hover {
+            box-shadow: 0 0 5px 0 rgba(255,78,80,1);
+        }
+    }
+
+    &__image {
+        @include font(22px, 700, #000);
+        text-decoration: none;
+    }
+}
+
+.grid {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    width: 300px;
+    position: relative;
+    margin: 10px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+    }
+}
+
+.tag {
+    position: absolute;
+    top: 32%;
+    @include font(21px, 700, #fff);
+    text-align: center;
+    padding-left: 20px;
+}
+@media (min-width: 768px) {
+    .grid {
+        margin: 18px auto;
+        width: 100%;
+        display: inline-block;
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+
+    .grid-item {
+        width: 235px;
+        float: left;
+        position: relative;
+        display: inline-block;
+        position: relative;
+        margin-top: 4px;
+
+        img {
+            width: 100%;
+            height: 98%;
+            border-radius: 4px;
+        }
+    }
+
+    .holiday_ideas {
+        max-width: 768px;
+        margin: 0 auto;
+
+        &__title {
+            margin-bottom: 12px;
+        }
+
+        .second_title {
+            margin: 69px 14px 31px 0;
+        }
+    }
+
+    .form__search {
+        padding-bottom: 90px;
+
+        &__wrapper {
+            width: 450px;
+            margin: 0 auto;
+            padding-right: 13px;
+        }
+
+        &__input {
+            width: 225px;
+        }
+
+        &__btn {
+            width: 157px;
+            margin-left: 6px;
+        }
+
+        &__header {
+            margin: 0 5px 38px 0;
+        }
+    }
+}
+@media (min-width: 1440px) {
+    .partners__icon {
+        right: 54px;
+    }
+
+    .holiday_ideas {
+        width: 100%;
+
+        &__title {
+            margin-top: 96px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .grid {
+        width: 1000px;
+        margin: 0 auto 0 -100px;
+
+        .grid-item {
+            width: 300px;
+        }
+    }
+}

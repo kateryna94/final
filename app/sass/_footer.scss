@@ -1,0 +1,129 @@
+.footer {
+    border-top: 4px solid #ff4e50;
+
+    &__wrapper {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        @include font(15px, 700, #ff4e50);
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 15px;
+        letter-spacing: 1.7px;
+        text-decoration: none;
+    }
+
+    &__text_bold {
+        @include font(14px, 700, #333);
+        text-align: center;
+        margin-top: 13px;
+        letter-spacing: 0.4px;
+    }
+
+    &__menu {
+        padding-left: 61px;
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        a {
+            display: block;
+            @include font(14px, 300, #666);
+            font-family: $roboto;
+            text-decoration: none;
+            padding-right: 10px;
+        }
+    }
+}
+
+.designer_ref__section {
+    p {
+        @include font(10px, 700, #ccc);
+        text-align: center;
+        text-transform: uppercase;
+        text-transform: uppercase;
+        margin-top: 13px;
+        letter-spacing: 1px;
+        padding-bottom: 8px;
+    }
+
+    a {
+        margin-left: 104px;
+    }
+}
+@media (min-width: 768px) {
+    .footer {
+        width: 100%;
+
+        &__wrapper {
+            display: flex;
+            max-width: 768px;
+            min-width: 700px;
+            margin: 0 auto;
+        }
+
+        &__logo {
+            text-align: left;
+            margin-top: 36px;
+        }
+
+        &__text_bold {
+            margin: 36px 20px 0 82px;
+        }
+
+        &__menu {
+            margin: 13px 0 0 21px;
+
+            li {
+                display: block;
+
+                a {
+                    height: 24px;
+                }
+            }
+        }
+    }
+
+    .designer_ref__section {
+        p {
+            margin: 36px 0 0 0;
+            text-align: right;
+        }
+
+        a {
+            margin-left: 99px;
+        }
+    }
+}
+@media (min-width: 1440px) {
+    .footer {
+        &__logo {
+            margin: 35px 0 0 4px;
+        }
+
+        &__wrapper {
+            display: flex;
+            max-width: 942px;
+            min-width: 940px;
+            margin: 0 auto;
+        }
+
+        &__text_bold {
+            margin-right: 9px;
+        }
+
+        &__menu {
+            &__wrapper {
+                margin-left: 13px;
+            }
+        }
+    }
+
+    .designer_ref__section {
+        margin-left: 261px;
+    }
+}

@@ -1,0 +1,207 @@
+.partner_choice {
+    &__wrapper {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @include font(22px, 700, #333);
+        text-align: center;
+        margin-top: 34px;
+        padding-left: 7px;
+        width: 300px;
+        letter-spacing: 0.45px;
+    }
+
+    &__link {
+        @include font(14px, 700, #ff4e50);
+        border: 2px solid #ff4e50;
+        border-radius: 20px;
+        text-decoration: none;
+        display: block;
+        margin: 14px 0 0 19px;
+        width: 275px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.1px;
+
+        &__wrapper {
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.partners {
+    max-width: 320px;
+    height: 215px;
+    margin-top: 14px;
+
+    &__name {
+        @include font(14px, 700, #333);
+        text-align: center;
+        padding-top: 17px;
+        letter-spacing: 0.2px;
+    }
+
+    &__info {
+        @include font(14px, 400, #666);
+        font-family: $roboto;
+        text-align: center;
+        max-width: 220px;
+        padding: 13px 0 0 47px;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        height: 121px;
+        position: relative;
+    }
+
+    &__icon {
+        @include firstIcon;
+        background-position: 0 0;
+        bottom: -6px;
+        right: 95px;
+    }
+
+    .second {
+        @include secondIcon;
+    }
+
+    .third {
+        @include thirdIcon;
+    }
+
+    .fourth {
+        @include fourthIcon;
+    }
+}
+
+.partner3 {
+    height: 215px;
+    margin-top: 47px;
+    margin-right: 3px;
+}
+
+.partner4 {
+    margin-right: 3px;
+}
+@media (min-width: 768px) {
+    .partner_choice {
+        &__wrapper {
+            width: 600px;
+            margin: 0 auto;
+            position: relative;
+            left: 47px;
+            top: 2px;
+        }
+
+        &__link {
+            margin: 0 auto;
+            width: 189px;
+            position: relative;
+            left: -2px;
+
+            &:hover {
+                box-shadow: 0 0 5px 0 rgba(255,78,80,1);
+            }
+
+            &__wrapper {
+                width: 100%;
+                margin-top: 71px;
+                padding-bottom: 63px;
+            }
+        }
+    }
+
+    .partner_choice__title {
+        width: 100%;
+        margin: 94px 0 2px -57px;
+    }
+
+    .partners {
+        display: inline-block;
+        margin-top: 27px;
+        height: 100%;
+        max-width: 250px;
+
+        &__icon {
+            right: 61px;
+        }
+
+        &__info {
+            position: relative;
+            left: -25px;
+        }
+    }
+
+    .partner1 {
+        position: relative;
+        top: -30px;
+    }
+
+    .partner2 {
+        position: relative;
+        top: 2px;
+        left: 2px;
+    }
+}
+@media (min-width: 1440px) {
+    .partner_choice {
+        &__title {
+            margin-top: 93px;
+            margin-left: -8px;
+        }
+
+        &__wrapper {
+            width: 960px;
+            margin: 0 auto;
+            position: relative;
+            left: -3px;
+            top: 0;
+        }
+
+        &__link {
+            left: 2px;
+
+            &__wrapper {
+                margin-top: 69px;
+                margin-left: -4px;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .partners {
+        max-width: 235px;
+        margin-top: 1px;
+
+        &__info {
+            left: -40px;
+            width: 300px;
+        }
+    }
+
+    .partner1 {
+        top: 0;
+        left: 4px;
+    }
+
+    .partner2 {
+        top: 32px;
+        left: 244px;
+    }
+
+    .partner3 {
+        position: relative;
+        left: -234px;
+    }
+
+    .partner4 {
+        position: relative;
+        left: 3px;
+    }
+}

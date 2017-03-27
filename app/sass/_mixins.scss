@@ -1,0 +1,42 @@
+@mixin font($size, $weight, $color) {
+  font-family: $montserrat;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+$montserrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto', sans-serif;
+@mixin background {
+  position: absolute;
+  background-image: url('../app/img/sprite/sprite.png');
+  background-repeat: no-repeat;
+}
+
+@mixin firstIcon {
+  background-position: 0px 0px;
+  width: 41px;
+  height: 41px;
+  @include background;
+}
+
+@mixin secondIcon {
+  background-position: -41px 0px;
+  width: 41px;
+  height: 41px;
+  @include background;
+}
+
+@mixin thirdIcon {
+  background-position: -41px -41px;
+  width: 41px;
+  height: 40px;
+  @include background;
+}
+
+@mixin fourthIcon {
+  background-position: 0px -41px;
+  width: 41px;
+  height: 41px;
+  @include background;
+}

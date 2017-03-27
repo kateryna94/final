@@ -1,0 +1,167 @@
+header {
+    height: 539px;
+    background: #000;
+    width: 100%;
+    background-image: url('../dist/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.autorization_section {
+    display: flex;
+    justify-content: center;
+    padding-top: 19px;
+
+    a {
+        @include font(14px, 700, #fff);
+        text-decoration: none;
+        width: 88px;
+        height: 34px;
+        line-height: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0 11px 0 -13px;
+
+        &:hover {
+            box-sizing: border-box;
+            border: 2px solid #fff;
+            border-radius: 16px;
+            margin-top: -2px;
+        }
+
+        &__log_in {
+            margin-right: 25px;
+        }
+    }
+}
+
+.slogan_section {
+  padding-top: 116px;
+  padding-bottom: 138px;
+  width: 320px;
+  margin: 0 auto;
+
+    &__siteName {
+        @include font(19px, 700, #fff);
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1.9px;
+        text-decoration: none;
+        margin-left: 70px;
+
+    }
+
+    &__tagline {
+        @include font(29px, 700, #fff);
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 28px;
+        letter-spacing: 0.8px;
+    }
+
+    &__tagline2 {
+        @include font(18px, 300, #fff);
+        font-family: $roboto;
+        text-align: center;
+        margin: 12px 0 0 42px;
+        width: 235px;
+    }
+
+    &__link {
+        @include font(14px, 700, #fff);
+        text-decoration: none;
+        display: block;
+        width: 280px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        background-color: #ff4e50;
+        border-radius: 20px;
+        letter-spacing: 0.2px;
+        margin: 15px 0 0 19px;
+
+        &:hover {
+          box-shadow: 0px 0px 4px 1px rgba(255,255,255,1);
+        }
+    }
+}
+@media (min-width: 768px) {
+    header {
+        position: relative;
+        height: 699px;
+    }
+
+    .autorization_section {
+        justify-content: flex-end;
+        padding: 41px 39px 0 0;
+    }
+
+    .slogan_section {
+        min-width: 750px;
+        margin-top: -31px;
+
+        &__siteName {
+            position: absolute;
+            top: 46px;
+            left: 49px;
+        }
+
+        &__tagline {
+            max-width: 494px;
+            font-size: 52px;
+            margin-left: 126px;
+            padding-top: 25px;
+            letter-spacing: 0.3px;
+        }
+
+        &__tagline2 {
+            width: 100%;
+            font-size: 24px;
+            margin-left: -2px;
+            padding-top: 13px;
+            letter-spacing: 0.1px;
+        }
+
+        &__link {
+            margin-left: 260px;
+            width: 226px;
+            margin-top: 33px;
+        }
+    }
+}
+@media (min-width: 1440px) {
+    header {
+        width: 100%;
+        background-image: url('../app/img/background.png');
+
+        .autorization_section {
+            margin-right: 203px;
+        }
+
+        .slogan_section {
+            max-width: 768px;
+            margin: 0 auto;
+
+            &__siteName {
+                left: 178px;
+            }
+
+            &__tagline {
+                width: 494px;
+                margin: 0 auto;
+            }
+
+            &__tagline2 {
+                margin-left: 0;
+                padding-top: 11px;
+            }
+
+            &__link {
+              margin-left: 268px;
+            }
+
+
+        }
+    }
+}
